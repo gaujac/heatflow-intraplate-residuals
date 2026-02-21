@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "Persistence of intraplate heat-flow anomalies far from tectonic boundaries"
+message: "If you use this repository, please cite it as follows."
+type: software
+
+authors:
+  - family-names: Gaujac
+    given-names: Cristiano
+    affiliation: Independent Researcher
+    country: Brazil
+    email: papers.gaujac@gmail.com
+
+abstract: >
+  Reproducible geospatial and statistical pipeline used to analyze the
+  relationship between terrestrial heat-flow measurements and tectonic
+  boundaries, with emphasis on persistent intraplate anomalies and
+  robustness under spatial and sampling controls.
+
+keywords:
+  - geophysics
+  - heat flow
+  - tectonics
+  - intraplate
+  - geospatial analysis
+  - reproducibility
+  - geothermal anomalies
+
+license: "MIT"
+version: "1.0.0"
+date-released: 2026-02-12

@@ -1,0 +1,72 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.log
+*.nbconvert.ipynb
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local envs (NÃO subir)
+.venv/
+venv/
+env/
+Scripts/
+Lib/
+Include/
+share/
+pyvenv.cfg
+conda-meta/
+
+# Large/temporary
+*.tmp
+*.bak
+
+# ==================================================
+# Scientific pipeline data (NOT versioned)
+# ==================================================
+
+# Raw and processed data
+data/raw/**
+data/processed/**
+
+# Large scientific formats
+*.xlsx
+*.xls
+*.csv
+*.parquet
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.nc
+*.grd
+*.tif
+*.tiff
+
+# Geospatial caches / indexes
+*.qix
+*.aux.xml
+
+# ==================================================
+# Pipeline outputs (local, non-canonical)
+# ==================================================
+
+# Intermediate analysis outputs
+public/outputs/**
+public/diagnostics/**
+
+# Keep canonical outputs
+!public/figures/**
+!public/analysis/**
+!public/qa/**
+!public/fingerprints/**
