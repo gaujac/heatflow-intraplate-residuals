@@ -1,0 +1,27 @@
+{
+  "artifact": "df_k_canon.csv",
+  "sha256": "ac586408d3e1d50ab488126369d64bf8ad9549d59df88057be12fc4fcde4dfc7",
+  "n_rows": 53420,
+  "n_cols": 6,
+  "columns": [
+    "lat",
+    "lon",
+    "q",
+    "dist_min_km",
+    "dist_gem_km",
+    "dist_pb_km"
+  ],
+  "criteria": {
+    "q_gt_0": true,
+    "dist_min_km_gte": 110.0,
+    "finite_required_cols": [
+      "lat",
+      "lon",
+      "q",
+      "dist_min_km",
+      "dist_gem_km",
+      "dist_pb_km"
+    ]
+  },
+  "source": "C:\\Users\\cgauj\\OneDrive\\\u00c1rea de Trabalho\\heatflow-intraplate-residuals\\public_release\\pipeline_kmeans\\df_all_snapshot.csv"
+}

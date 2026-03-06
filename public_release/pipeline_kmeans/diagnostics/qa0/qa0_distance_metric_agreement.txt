@@ -1,0 +1,2 @@
+Spearman GEM vs PB: r=0.701876, log10_p=-19200.913, n=91059
+Pearson  GEM vs PB: r=0.805097, log10_p=-36431.489, n=91059

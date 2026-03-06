@@ -1,0 +1,2 @@
+Correlation Type,x,y,r,p_value_str,log10_p,n,cutoff_km,source
+Log–Log (protocol),log10(dist+1),log10(q),-0.24400587514937597,< 1e-2000,-2000.0,53420,110.0,df_k_canon

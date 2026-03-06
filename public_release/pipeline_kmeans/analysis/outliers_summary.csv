@@ -1,0 +1,8 @@
+Category,Flag,Cutoff,N_all,pct_all,N_dist_ge_cut,pct_within_dist_domain
+IQR (linear q),outlier_linear,q ≥ 169.0,10347,11.362962474878925,1963,3.6746536877573943
+IQR (log10 q),outlier_log,log10(q) ≥ 2.432 (~270),5944,6.527635928354145,870,1.628603519281168
+"Extreme (q ≥ 1,000)",outlier_extreme,"q ≥ 1,000",1568,1.7219604871566787,226,0.42306252339947586
+"Ultra-rare (q ≥ 100,000)",outlier_ultrarare,"q ≥ 100,000",12,0.013178269034362337,11,0.02059153874953201
+Relevant (q ≥ 169),outlier_relevant_lin,q ≥ 169,10347,11.362962474878925,1963,3.6746536877573943
+Relevant (log10 q ≥ 2.432),outlier_relevant_log,log10(q) ≥ 2.432,5944,6.527635928354145,870,1.628603519281168
+Any (protocol/value-based),outlier_any,-,10347,11.362962474878925,1963,3.6746536877573943

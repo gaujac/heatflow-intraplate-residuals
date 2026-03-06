@@ -1,0 +1,3 @@
+GEM: log10(q) = -0.1216 * log10(dist_gem_km) + 2.1413
+PB2002: log10(q) = -0.1411 * log10(dist_pb_km) + 2.2474
+MIN: log10(q) = -0.1194 * log10(dist_min_km) + 2.1321

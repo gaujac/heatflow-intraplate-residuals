@@ -1,20 +1,24 @@
+# ==================================================
 # OS / editor
+# ==================================================
 .DS_Store
 Thumbs.db
 desktop.ini
 .vscode/
 .idea/
 
-# Jupyter
+# ==================================================
+# Jupyter / Python cache
+# ==================================================
 .ipynb_checkpoints/
 *.log
 *.nbconvert.ipynb
-
-# Python cache
 __pycache__/
 *.pyc
 
-# Local envs (NÃO subir)
+# ==================================================
+# Local virtual environments (do NOT version)
+# ==================================================
 .venv/
 venv/
 env/
@@ -25,48 +29,57 @@ share/
 pyvenv.cfg
 conda-meta/
 
-# Large/temporary
+# ==================================================
+# Temporary / backup files
+# ==================================================
 *.tmp
 *.bak
 
 # ==================================================
-# Scientific pipeline data (NOT versioned)
+# Scientific input data (NOT versioned)
 # ==================================================
-
-# Raw and processed data
 data/raw/**
 data/processed/**
 
-# Large scientific formats
+# Large scientific source formats outside canonical release
 *.xlsx
 *.xls
-*.csv
-*.parquet
-*.gpkg
+*.nc
+*.grd
+*.tif
+*.tiff
+*.qix
+*.aux.xml
+
+# Shapefile components outside canonical release
 *.shp
 *.shx
 *.dbf
 *.prj
 *.cpg
-*.nc
-*.grd
-*.tif
-*.tiff
 
-# Geospatial caches / indexes
-*.qix
-*.aux.xml
+# Tabular / geospatial heavy intermediates outside canonical release
+*.parquet
+*.gpkg
 
 # ==================================================
-# Pipeline outputs (local, non-canonical)
+# Re-include canonical reproducible outputs
 # ==================================================
+!public_release/**
+!public_release/**/*.csv
+!public_release/**/*.json
+!public_release/**/*.md
+!public_release/**/*.txt
+!public_release/**/*.png
+!public_release/**/*.pdf
+!public_release/**/*.gpkg
 
-# Intermediate analysis outputs
-public/outputs/**
-public/diagnostics/**
+!public_release_package/**
+!public_release_package/**/*.tsv
+!public_release_package/**/*.png
+!public_release_package/**/*.pdf
 
-# Keep canonical outputs
-!public/figures/**
-!public/analysis/**
-!public/qa/**
-!public/fingerprints/**
+# ==================================================
+# Optional: ignore legacy folders if they still exist
+# ==================================================
+public/**

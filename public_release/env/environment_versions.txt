@@ -1,0 +1,19 @@
+=== Environment version snapshot ===
+Timestamp_UTC: 2026-03-03T19:44:26.949290+00:00
+OS: Windows 11
+Machine: AMD64
+Python: 3.12.4
+Executable: C:\projetos\sismologia\Scripts\python.exe
+numpy: 2.3.4
+pandas: 2.2.3
+scipy: 1.15.2
+statsmodels: 0.14.4
+sklearn: 1.7.0
+matplotlib: 3.10.0
+geopandas: 1.0.1
+shapely: 2.1.1
+pyproj: 3.7.0
+fiona: 1.10.1
+rasterio: 1.4.3
+xarray: 2025.6.1
+cartopy: 0.24.1

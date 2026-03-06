@@ -1,0 +1,2 @@
+canon_source,outliers_source,N_canon_points,N_outliers_points,N_kept_points_no_snapping,N_kept_unique_keys_rounding,N_missing_from_canon_by_keys,N_kept_sites_1km_aux,site_table_found_in_memory,site_table_rows
+memory:df_k_canon,memory:df_outliers,53420,1963,603,519,0,361,g_site,58032

@@ -1,0 +1,55 @@
+{
+  "snapshot_utc": "2026-03-03T19:44:26.965195+00:00",
+  "sys_executable": "C:\\projetos\\sismologia\\Scripts\\python.exe",
+  "python_version": "3.12.4",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64"
+  },
+  "paths": {
+    "env_out": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env",
+    "pipeline_root": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/pipeline_kmeans"
+  },
+  "tracked_files": [
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env/requirements.txt",
+      "exists": true,
+      "size_bytes": 4389,
+      "mtime_utc": "2026-03-03T19:44:26.871351+00:00",
+      "sha256": "b6cbe33a1292d82c5b37ed7ee3d0c7e6706072aaadd1c23c37c94b6f96977fad"
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env/environment_versions.txt",
+      "exists": true,
+      "size_bytes": 407,
+      "mtime_utc": "2026-03-03T19:44:26.961029+00:00",
+      "sha256": "2ec6d9e923e1fca0e50092aa5ab6e7cfbedf35073fc1a7e82b6d780fe4389bd5"
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env/pipeline_config_snapshot.json",
+      "exists": false
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/analysis/df_k_canon.csv",
+      "exists": false
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/analysis/robust_by_cluster.csv",
+      "exists": false
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/analysis/moransI_residuals_by_cluster.csv",
+      "exists": false
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/pipeline_kmeans/df_k_canon.csv",
+      "exists": false
+    },
+    {
+      "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/pipeline_kmeans/df_k_fingerprint_principal.json",
+      "exists": false
+    }
+  ],
+  "inventory": []
+}

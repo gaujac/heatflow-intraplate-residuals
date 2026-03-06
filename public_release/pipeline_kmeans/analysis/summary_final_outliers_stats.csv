@@ -1,0 +1,31 @@
+metric,value
+N_outliers_final,603.0
+q_threshold_mW_m-2,169.0
+q_count,603.0
+q_mean,370.5541094041459
+q_std,400.68542705465086
+q_min,169.0
+q_50%,230.0
+q_90%,760.0
+q_95%,1047.6999999999998
+q_99%,2224.8
+q_max,3212.0
+count_Relevant 169–300 mW m$^{-2}$,417.0
+frac_Relevant 169–300 mW m$^{-2}$,0.6915422885572139
+count_Relevant 300–500 mW m$^{-2}$,99.0
+frac_Relevant 300–500 mW m$^{-2}$,0.16417910447761194
+count_Relevant 500–1000 mW m$^{-2}$,53.0
+frac_Relevant 500–1000 mW m$^{-2}$,0.087893864013267
+count_Extreme 1 000–100 000 mW m$^{-2}$,34.0
+frac_Extreme 1 000–100 000 mW m$^{-2}$,0.05638474295190713
+count_Ultra-rare ≥100 000 mW m$^{-2}$,0.0
+frac_Ultra-rare ≥100 000 mW m$^{-2}$,0.0
+dist_min_km_count,603.0
+dist_min_km_mean,579.0995478859764
+dist_min_km_std,701.8728692881956
+dist_min_km_min,110.48462266720156
+dist_min_km_25%,148.24898197513363
+dist_min_km_50%,289.4250079747453
+dist_min_km_75%,706.4337627905758
+dist_min_km_90%,1465.1125692721157
+dist_min_km_max,4072.9559828651936

@@ -1,0 +1,4 @@
+[COFACTOR] Missing raster: None
+[COFACTOR] Missing raster: None
+[COFACTOR] Missing raster: None
+[COFACTORS] GAM failed → OLS+splines fallback: No module named 'pygam'

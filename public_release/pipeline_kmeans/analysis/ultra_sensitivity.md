@@ -1,0 +1,7 @@
+# Ultra-extreme sensitivity analysis (site counts)
+
+|   threshold_mWm2 |   N_measurements |   N_sites_1km |   N_continental |   N_oceanic |   N_unknown |
+|-----------------:|-----------------:|--------------:|----------------:|------------:|------------:|
+|            50000 |               26 |             7 |               1 |           6 |           0 |
+|           100000 |               12 |             4 |               1 |           3 |           0 |
+|           200000 |                5 |             1 |               0 |           1 |           0 |

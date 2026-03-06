@@ -1,0 +1,4 @@
+Region,lon_min,lon_max,n_points,Silhouette_mean
+Americas,-180.0,-30.0,24156,0.997095229025088
+Eurasia,-30.0,150.0,27987,0.9969821182590717
+Oceania,110.0,180.0,5780,0.9937770263036331

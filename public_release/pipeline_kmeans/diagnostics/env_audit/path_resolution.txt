@@ -1,0 +1,12 @@
+$ where python
+C:\Projetos\sismologia\Scripts\python.exe
+
+$ where pip
+C:\Projetos\sismologia\Scripts\pip.exe
+
+$ where jupyter
+C:\Projetos\sismologia\Scripts\jupyter.exe
+
+$ where conda
+INFORMA€åES: nÆo foi poss¡vel localizar arquivos para o(s) padrÆo(äes) especificado(s).
+

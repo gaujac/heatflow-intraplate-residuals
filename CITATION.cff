@@ -3,18 +3,20 @@ title: "Persistence of intraplate heat-flow anomalies far from tectonic boundari
 message: "If you use this repository, please cite it as follows."
 type: software
 
+doi: 10.5281/zenodo.18725719
+
 authors:
   - family-names: Gaujac
     given-names: Cristiano
-    affiliation: Independent Researcher
-    country: Brazil
+    affiliation: "Independent Researcher"
     email: papers.gaujac@gmail.com
 
 abstract: >
-  Reproducible geospatial and statistical pipeline used to analyze the
+  Reproducible computational pipeline used to analyze the spatial
   relationship between terrestrial heat-flow measurements and tectonic
   boundaries, with emphasis on persistent intraplate anomalies and
-  robustness under spatial and sampling controls.
+  their statistical robustness under multiple spatial and sampling
+  controls.
 
 keywords:
   - geophysics
@@ -22,9 +24,9 @@ keywords:
   - tectonics
   - intraplate
   - geospatial analysis
-  - reproducibility
   - geothermal anomalies
+  - reproducible research
 
-license: "MIT"
-version: "1.0.0"
-date-released: 2026-02-12
+license: MIT
+
+version: "1.0"
