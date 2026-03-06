@@ -1,5 +1,6 @@
 # Global Heat-Flow Anomalies and Tectonic Distance Analysis
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18892240.svg)](https://doi.org/10.5281/zenodo.18892240)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18892833.svg)](https://doi.org/10.5281/zenodo.18892833)
 
 This repository contains the full reproducible analysis pipeline used in the study:
 
