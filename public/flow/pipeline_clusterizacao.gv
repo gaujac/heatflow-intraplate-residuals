@@ -1,0 +1,77 @@
+// IHFC Pipeline — Current Protocol + QA (Snippet-aligned)
+digraph {
+	fontname="Segoe UI" fontsize=11 nodesep=0.35 rankdir=LR ranksep=0.50 splines=ortho
+	A [label="A) (2) Global config
+Paths, constants, PARAMS container" fillcolor="#e8f0fe" fontname="Segoe UI" shape=box style="rounded,filled"]
+	B [label="B) (3) IHFC ingest + distances
+• Load/clean IHFC
+• dist_gem_km / dist_pb_km
+• dist_min_km = min(GEM, PB)" fillcolor="#d2e3fc" fontname="Segoe UI" shape=box style="rounded,filled"]
+	B2 [label="B2) (3) IHFC filters / QC (protocol)
+• numeric validity (q, lat/lon)
+• physical bounds + unit sanity
+• missing geometry / duplicates
+• optional: site-collapse" fillcolor="#d7ccc8" fontname="Segoe UI" shape=box style="rounded,filled"]
+	C [label="C) (4) Tectonic geometry inputs (parallel)
+• GEM global active faults
+• PB2002 plate boundaries
+(harmonized loaders)" fillcolor="#c5cae9" fontname="Segoe UI" shape=box style="rounded,filled"]
+	D [label="D) (5) Robust heat-flow threshold (DECISION)
+• IQR-based tail diagnostics
+• Derive Q_THR_RELEV (not assumed)" fillcolor="#bbdefb" fontname="Segoe UI" shape=box style="rounded,filled"]
+	E [label="E) (7–9) Protocol decision + canonical set
+• Cutoff sensitivity (derive DIST_CUTOFF_KM)
+• Canonical intraplate dataset + Fig. 1
+• Apply: dist_min_km ≥ DIST_CUTOFF_KM" fillcolor="#a5d6a7" fontname="Segoe UI" shape=box style="rounded,filled"]
+	F [label="F) (26, 27–30) Distance-model QA & sensitivity
+• ULTRA sensitivity (50k/100k/200k)
+• AEQD recompute & compare (delta maps)" fillcolor="#e1bee7" fontname="Segoe UI" shape=box style="rounded,filled"]
+	G [label="G) (40, 59–62) Clustering (protocol-aligned)
+• KMeans (k=2..6; main)
+• Ward / DBSCAN sanity checks
+• Label alignment & panels" fillcolor="#c8e6c9" fontname="Segoe UI" shape=box style="rounded,filled"]
+	H [label="H) (60) k selection (DECISION)
+• Silhouette (↑), CH (↑), DB (↓)
+• k=2 vs k=4 comparison" fillcolor="#c8e6c9" fontname="Segoe UI" shape=box style="rounded,filled"]
+	I [label="I) (63–66) Stability & agreement
+• ARI/NMI across methods
+• Agreement index maps
+• Bootstrap stability (ARI)
+• Silhouette profiles" fillcolor="#ffe082" fontname="Segoe UI" shape=box style="rounded,filled"]
+	J [label="J) (41, 46, 73–75) Regressions + spatial QA
+• Global/regional + per-cluster models
+• Robust/quantile
+• Moran's I on residuals" fillcolor="#fff59d" fontname="Segoe UI" shape=box style="rounded,filled"]
+	K [label="K) (67–72) Regional/continental coherence
+• Silhouette by region
+• p-values + FDR-BH
+• Agreement by continent
+• Distance summaries by cluster" fillcolor="#e6ee9c" fontname="Segoe UI" shape=box style="rounded,filled"]
+	Q1 [label="QA) (78) Seismic fragmentation tests (QA A–C)
+• Shallow seismicity overlap controls
+• Produces intraplate_clean subset" fillcolor="#f3e5f5" fontname="Segoe UI" shape=box style="rounded,filled"]
+	N1 [label="N1) (83) Environment + config snapshot
+→ environment_versions.json" fillcolor="#fafafa" fontname="Segoe UI" shape=note style=filled]
+	N2 [label="N2) (85) Final reproducibility manifest
+→ FINAL_PIPELINE_FREEZE_*.json" fillcolor="#fafafa" fontname="Segoe UI" shape=note style=filled]
+	N3 [label="N3) (79–81) Final intraplate outliers deliverables
+• Maps (Robinson)
+• Summary stats + scatter
+• Uses Q_THR_RELEV & DIST_CUTOFF_KM" fillcolor="#fafafa" fontname="Segoe UI" shape=note style=filled]
+	A -> B
+	C -> B
+	B -> B2
+	B2 -> D
+	D -> E
+	E -> F
+	E -> G
+	G -> H
+	H -> I
+	E -> J
+	G -> J
+	I -> K
+	E -> Q1
+	Q1 -> N3
+	A -> N1
+	K -> N2
+}
