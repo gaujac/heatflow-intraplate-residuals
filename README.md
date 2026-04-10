@@ -204,3 +204,11 @@ The code is released under the **MIT License**.
 Original datasets remain subject to their respective licenses and are cited in the manuscript. Redistribution of restricted datasets may not be permitted.
 
 Some large raw datasets used in this pipeline are not included in this repository due to GitHub file size limitations. These datasets are standard public geophysical resources and can be obtained from their original providers (e.g., IHFC, GEM, PB2002, WGM2012, GSRM, and global earthquake catalogs). All processing steps remain fully reproducible using the provided code and data access instructions.
+
+## Data availability
+
+Large raw datasets required for full reproducibility are publicly available at:
+
+https://doi.org/10.5281/zenodo.19499641
+
+These datasets include global earthquake catalogs and gravity grid data used in the analysis. Their availability ensures that all steps of the pipeline can be independently reproduced.
