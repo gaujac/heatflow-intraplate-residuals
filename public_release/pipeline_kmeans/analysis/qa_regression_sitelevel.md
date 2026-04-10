@@ -23,3 +23,25 @@
 ## SR2 Panel
 
 ![SR2 panel](sr2_panel_density_and_residuals.png)
+
+
+---
+
+## Residual diagnostics
+
+**Model (fixed):** `log10(q) ~ log10(dist_min_km + 1)`
+
+- **N (used in fit):** 58,032
+- **β_logdist (HC3):** -0.1129
+- **R²:** 0.096
+
+### Normality tests
+- **Shapiro–Wilk** (≤5,000 subsample): W = 0.9112, p 3.184e-47 (log10 p = -46.5)
+- **Jarque–Bera** (full): JB = 85484.79, p < 1e-300 (log10 p = -inf)
+
+_Note: For large N, formal normality tests typically reject the null; robust HC3 inference does not rely on residual normality._
+
+### Residual histogram
+Clipped at the 1st–99th percentiles for visualization.
+
+![Residual histogram](qa_residual_hist.png)

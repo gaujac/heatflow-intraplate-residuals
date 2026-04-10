@@ -1,5 +1,5 @@
 {
-  "snapshot_utc": "2026-03-03T19:44:26.965195+00:00",
+  "snapshot_utc": "2026-04-09T14:52:28.939660+00:00",
   "sys_executable": "C:\\projetos\\sismologia\\Scripts\\python.exe",
   "python_version": "3.12.4",
   "platform": {
@@ -16,19 +16,22 @@
       "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env/requirements.txt",
       "exists": true,
       "size_bytes": 4389,
-      "mtime_utc": "2026-03-03T19:44:26.871351+00:00",
+      "mtime_utc": "2026-04-09T14:52:28.897694+00:00",
       "sha256": "b6cbe33a1292d82c5b37ed7ee3d0c7e6706072aaadd1c23c37c94b6f96977fad"
     },
     {
       "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env/environment_versions.txt",
       "exists": true,
       "size_bytes": 407,
-      "mtime_utc": "2026-03-03T19:44:26.961029+00:00",
-      "sha256": "2ec6d9e923e1fca0e50092aa5ab6e7cfbedf35073fc1a7e82b6d780fe4389bd5"
+      "mtime_utc": "2026-04-09T14:52:28.934664+00:00",
+      "sha256": "7350f81a06980e841032ff7815c5280dc0f24bcb0f54205f22a31f04ba4adf95"
     },
     {
       "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env/pipeline_config_snapshot.json",
-      "exists": false
+      "exists": true,
+      "size_bytes": 2391,
+      "mtime_utc": "2026-03-03T19:44:26.981437+00:00",
+      "sha256": "b8a6e481144c427c26c94247f90e1ceb86747693ccee44697f653c0272c4edc8"
     },
     {
       "path": "C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/pipeline_kmeans/analysis/df_k_canon.csv",

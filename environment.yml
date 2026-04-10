@@ -6,25 +6,38 @@ channels:
 dependencies:
   - python=3.11
   - pip
-  - numpy
-  - pandas
-  - scipy
+
+  # Core scientific stack
+  - numpy>=1.24
+  - pandas>=2.0
+  - scipy>=1.10
   - statsmodels
-  - matplotlib
-  - scikit-learn
-  - hdbscan
-  - jupyterlab
-  - ipywidgets
-  - geopandas
+  - scikit-learn>=1.3
+
+  # Visualization
+  - matplotlib>=3.7
+
+  # Geospatial
+  - geopandas>=0.14
   - shapely
   - pyproj
   - fiona
   - rtree
   - pyogrio
   - cartopy
+
+  # Notebook / UI
+  - jupyterlab
+  - ipywidgets
+
+  # IO
   - openpyxl
   - xlrd
+
+  # Utilities
   - tqdm
   - rich
+
+  # Graphviz
   - graphviz
   - python-graphviz

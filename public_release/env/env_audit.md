@@ -1,5 +1,5 @@
 # Environment & Tooling Audit
-- Timestamp (UTC): **2026-03-06T10:41:12+00:00**
+- Timestamp (UTC): **2026-04-09T14:52:29+00:00**
 - Output directory: `C:/Users/cgauj/OneDrive/Área de Trabalho/heatflow-intraplate-residuals/public_release/env`
 
 ## System
