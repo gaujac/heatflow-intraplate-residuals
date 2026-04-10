@@ -1,6 +1,6 @@
 # Persistence of Intraplate Heat-Flow Anomalies and Tectonic Distance Analysis
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18892833.svg)](https://doi.org/10.5281/zenodo.18892833)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19493652.svg)](https://doi.org/10.5281/zenodo.19493652)
 
 This repository contains the full reproducible analysis pipeline used in the study:
 
