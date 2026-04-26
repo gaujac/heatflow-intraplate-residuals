@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Persistence of intraplate heat-flow anomalies far from tectonic boundaries"
+title: "Reproducible pipeline for analyzing intraplate heat-flow anomalies relative to tectonic boundaries"
 message: "If you use this repository, please cite it as follows."
 type: software
 
@@ -13,19 +13,31 @@ authors:
     email: papers.gaujac@gmail.com
 
 abstract: >
-  Reproducible computational pipeline used to analyze the spatial
-  relationship between terrestrial heat-flow measurements and tectonic
-  boundaries, with emphasis on persistent intraplate anomalies and
-  their statistical robustness under multiple spatial and sampling
-  controls.
+  This repository provides a fully reproducible computational pipeline
+  designed to investigate the spatial relationship between global
+  terrestrial heat-flow measurements and tectonic structures.
+  
+  The pipeline enables systematic evaluation of heat-flow behavior
+  as a function of distance from tectonic boundaries, incorporating
+  multiple statistical controls, clustering analyses, and robustness
+  tests.
+  
+  Results generated using this framework demonstrate that statistically
+  significant intraplate heat-flow anomalies persist far beyond
+  classical tectonic domains, challenging models in which tectonic
+  proximity is assumed to be the dominant control on heat flow.
+  
+  All analyses, figures, and derived results are fully reproducible
+  using the provided code and documented data sources.
 
 keywords:
   - geophysics
   - heat flow
-  - tectonics
-  - intraplate
+  - tectonic boundaries
+  - intraplate processes
   - geospatial analysis
   - geothermal anomalies
-  - reproducible research
+  - reproducible pipeline
+  - scientific reproducibility
 
 license: MIT

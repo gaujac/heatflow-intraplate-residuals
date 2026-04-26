@@ -19,3 +19,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+This license applies to the source code and computational pipeline contained in this repository.
+
+External datasets used in this project (e.g., IHFC, GEM, PB2002, earthquake catalogs, gravity grids)
+are subject to their respective licenses and are not covered by this MIT License.
