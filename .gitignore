@@ -36,12 +36,25 @@ conda-meta/
 *.bak
 
 # ==================================================
-# Scientific input data (NOT versioned)
+# Scientific input data
 # ==================================================
-data/raw/**
+
+# Ignore ONLY datasets hosted in Zenodo
+data/raw/earthquakes/**
+data/raw/gravity/**
+
+# Ignore processed data
 data/processed/**
 
-# Large scientific source formats outside canonical release
+# ==================================================
+# IGNORE upload artifacts (CRITICAL)
+# ==================================================
+data/raw/zenodo_upload/**
+data/raw/*.zip
+
+# ==================================================
+# Large scientific formats (outside curated inputs)
+# ==================================================
 *.xlsx
 *.xls
 *.nc
@@ -51,35 +64,32 @@ data/processed/**
 *.qix
 *.aux.xml
 
-# Shapefile components outside canonical release
+*.parquet
+*.gpkg
+
+# ==================================================
+# Shapefiles (ONLY if outside curated raw folders)
+# ==================================================
 *.shp
 *.shx
 *.dbf
 *.prj
 *.cpg
 
-# Tabular / geospatial heavy intermediates outside canonical release
-*.parquet
-*.gpkg
-
 # ==================================================
-# Re-include canonical reproducible outputs
+# Generated outputs (NOT versioned — in Zenodo)
 # ==================================================
-!public_release/**
-!public_release/**/*.csv
-!public_release/**/*.json
-!public_release/**/*.md
-!public_release/**/*.txt
-!public_release/**/*.png
-!public_release/**/*.pdf
-!public_release/**/*.gpkg
-
-!public_release_package/**
-!public_release_package/**/*.tsv
-!public_release_package/**/*.png
-!public_release_package/**/*.pdf
-
-# ==================================================
-# Optional: ignore legacy folders if they still exist
-# ==================================================
+public_release/**
+public_release_package/**
 public/**
+
+# ==================================================
+# Safety: allow curated raw datasets (small/essential)
+# ==================================================
+!data/raw/
+!data/raw/IHFC/**
+!data/raw/GEM/**
+!data/raw/PB2002/**
+!data/raw/NaturalEarth/**
+!data/raw/strain/**
+!data/raw/readme_raw.md
