@@ -164,6 +164,36 @@ Raw data are not redistributed when licensing restrictions apply.
 
 ---
 
+# 6.1. Required raw data placement
+
+Some large auxiliary datasets are distributed separately due to file size limitations.
+
+After downloading the auxiliary datasets from Zenodo:
+
+https://doi.org/10.5281/zenodo.19784141
+
+they must be extracted and placed in the following directory:
+
+```
+data/raw/
+```
+
+Expected structure:
+
+```
+data/raw/
+├── earthquakes/
+│   └── terremotos_combined_1898_2025.csv
+├── gravity/
+│   └── WGM2012_Bouguer_ponc_2min.grd
+```
+
+These directories must be created manually if they do not already exist.
+
+The pipeline expects this structure by default. If these datasets are not placed correctly, the pipeline will not execute properly.
+
+---
+
 # 7. Reproducing Figures
 
 Running the full pipeline reproduces:
@@ -231,3 +261,6 @@ The datasets required for full reproducibility are available via Zenodo:
   https://doi.org/10.5281/zenodo.19784141
 
 All datasets correspond to the versions used in the manuscript and ensure full independent reproducibility of the analysis.
+
+The directory structure required to run the pipeline is described in the repository documentation.
+
