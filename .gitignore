@@ -107,14 +107,18 @@ public/**
 !public_release/figures_main/fig3_heatflow_vs_distance_panel.pdf
 !public_release/figures_main/fig4_density_and_residuals.png
 !public_release/figures_main/fig4_density_and_residuals.pdf
-!public_release/figures_main/fig5_robinson_outliers_faults_qclasses.png
-!public_release/figures_main/fig5_robinson_outliers_faults_qclasses.pdf
-!public_release/figures_main/fig6_land_ocean_panel.png
-!public_release/figures_main/fig6_land_ocean_panel.pdf
+!public_release/figures_main/fig5_robustness_gradient_panel.png
+!public_release/figures_main/fig5_robustness_gradient_panel.pdf
+!public_release/figures_main/fig6_quantile_dependent_control_panel.png
+!public_release/figures_main/fig6_quantile_dependent_control_panel.pdf
 !public_release/figures_main/fig7_boundary_type_context_panel.png
 !public_release/figures_main/fig7_boundary_type_context_panel.pdf
 !public_release/figures_main/fig8_crust1_ocean_age_context_panel.png
 !public_release/figures_main/fig8_crust1_ocean_age_context_panel.pdf
+!public_release/figures_main/fig9_robinson_outliers_faults_qclasses.png
+!public_release/figures_main/fig9_robinson_outliers_faults_qclasses.pdf
+!public_release/figures_main/fig10_land_ocean_panel.png
+!public_release/figures_main/fig10_land_ocean_panel.pdf
 
 # ==================================================
 # Safety: allow curated raw datasets (small/essential)

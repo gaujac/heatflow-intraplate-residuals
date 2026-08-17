@@ -92,7 +92,7 @@ public_release/
 ```
 
 Most of this directory is generated automatically and is not versioned. The
-curated PNG and PDF files used as main-text Figures 1-8 are versioned under
+curated PNG and PDF files used as main-text Figures 1-10 are versioned under
 `public_release/figures_main/` for direct inspection.
 
 A frozen version corresponding to the manuscript is archived on Zenodo.
@@ -129,7 +129,7 @@ public_release/
 ```
 
 These directories are generated during pipeline execution. Only the curated
-main-text Figures 1-8 are versioned in Git; supplementary and intermediate
+main-text Figures 1-10 are versioned in Git; supplementary and intermediate
 outputs remain excluded.
 
 The version used in the manuscript is archived on Zenodo and corresponds exactly to the reproducibility package.

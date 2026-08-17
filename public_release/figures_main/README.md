@@ -10,10 +10,12 @@ ignored by Git even if they are present locally.
 | 2 | `fig2_intraplate_domain_q` |
 | 3 | `fig3_heatflow_vs_distance_panel` |
 | 4 | `fig4_density_and_residuals` |
-| 5 | `fig5_robinson_outliers_faults_qclasses` |
-| 6 | `fig6_land_ocean_panel` |
+| 5 | `fig5_robustness_gradient_panel` |
+| 6 | `fig6_quantile_dependent_control_panel` |
 | 7 | `fig7_boundary_type_context_panel` |
 | 8 | `fig8_crust1_ocean_age_context_panel` |
+| 9 | `fig9_robinson_outliers_faults_qclasses` |
+| 10 | `fig10_land_ocean_panel` |
 
 Each figure is versioned in both PNG and PDF formats. The pipeline writes new
 versions to this directory through the canonical `FIG_MAIN_DIR`/`FIG_DIR`
