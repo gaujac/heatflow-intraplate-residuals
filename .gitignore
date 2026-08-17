@@ -34,6 +34,18 @@ conda-meta/
 # ==================================================
 *.tmp
 *.bak
+.tmp_*/
+.tmp_*.py
+tmp/
+tmp_*/
+
+# Local editorial/document-processing workspace
+text/
+tools/
+
+# Superseded integrated notebook snapshots; the canonical notebook is
+# pipeline/pipeline_heatflow_vs_tectonics.ipynb.
+pipeline/*_integrated_*.ipynb
 
 # ==================================================
 # Scientific input data
@@ -83,6 +95,27 @@ public_release/**
 public_release_package/**
 public/**
 
+# Curated final main-text figures are versioned for direct inspection.
+!public_release/
+!public_release/figures_main/
+!public_release/figures_main/README.md
+!public_release/figures_main/fig1_thermal_regime_transition.png
+!public_release/figures_main/fig1_thermal_regime_transition.pdf
+!public_release/figures_main/fig2_intraplate_domain_q.png
+!public_release/figures_main/fig2_intraplate_domain_q.pdf
+!public_release/figures_main/fig3_heatflow_vs_distance_panel.png
+!public_release/figures_main/fig3_heatflow_vs_distance_panel.pdf
+!public_release/figures_main/fig4_density_and_residuals.png
+!public_release/figures_main/fig4_density_and_residuals.pdf
+!public_release/figures_main/fig5_robinson_outliers_faults_qclasses.png
+!public_release/figures_main/fig5_robinson_outliers_faults_qclasses.pdf
+!public_release/figures_main/fig6_land_ocean_panel.png
+!public_release/figures_main/fig6_land_ocean_panel.pdf
+!public_release/figures_main/fig7_boundary_type_context_panel.png
+!public_release/figures_main/fig7_boundary_type_context_panel.pdf
+!public_release/figures_main/fig8_crust1_ocean_age_context_panel.png
+!public_release/figures_main/fig8_crust1_ocean_age_context_panel.pdf
+
 # ==================================================
 # Safety: allow curated raw datasets (small/essential)
 # ==================================================
@@ -93,3 +126,17 @@ public/**
 !data/raw/NaturalEarth/**
 !data/raw/strain/**
 !data/raw/readme_raw.md
+!data/raw/README_context_datasets.md
+
+# Curated contextual inputs added for the revised analysis.
+!data/raw/CRUST1/
+data/raw/CRUST1/**
+!data/raw/CRUST1/crust1_moho.xyz
+
+!data/raw/ocean_age/
+data/raw/ocean_age/**
+!data/raw/ocean_age/age.3.2.nc.bz2
+
+!data/raw/plate_boundaries_typed/
+data/raw/plate_boundaries_typed/**
+!data/raw/plate_boundaries_typed/utig_noaa_plate_boundaries.geojson

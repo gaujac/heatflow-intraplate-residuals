@@ -29,9 +29,9 @@ heatflow-intraplate-residuals/
 │
 ├── pipeline/                         # Jupyter notebooks and analysis scripts
 │
-├── public_release/                  # Generated outputs (created at runtime; not versioned)
+├── public_release/                  # Generated outputs
 │ │
-│ ├── figures_main/
+│ ├── figures_main/                # Curated final main-text figures (versioned)
 │ ├── figures_supplementary_methods/
 │ ├── figures_supplementary_results/
 │ │
@@ -91,7 +91,9 @@ These outputs are written to:
 public_release/
 ```
 
-This directory is generated automatically during execution and is **not versioned in this repository**.
+Most of this directory is generated automatically and is not versioned. The
+curated PNG and PDF files used as main-text Figures 1-8 are versioned under
+`public_release/figures_main/` for direct inspection.
 
 A frozen version corresponding to the manuscript is archived on Zenodo.
 
@@ -126,7 +128,9 @@ public_release/
 └── figures_supplementary_results/
 ```
 
-These directories are generated during pipeline execution.
+These directories are generated during pipeline execution. Only the curated
+main-text Figures 1-8 are versioned in Git; supplementary and intermediate
+outputs remain excluded.
 
 The version used in the manuscript is archived on Zenodo and corresponds exactly to the reproducibility package.
 
@@ -157,6 +161,9 @@ Main datasets used in this study:
 • IHFC Global Heat Flow Database (2024 release)
 • GEM Global Active Faults database
 • PB2002 plate boundary model
+• UTIG/NOAA typed plate-boundary layer
+• CRUST1.0 global crustal model
+• Global oceanic crustal-age grid
 
 All datasets are cited in the manuscript.
 
@@ -182,13 +189,23 @@ Expected structure:
 
 ```
 data/raw/
+├── CRUST1/
+│   └── crust1_moho.xyz
+├── ocean_age/
+│   ├── age.3.2.nc.bz2
+│   └── age.3.2.nc              # generated locally; ignored by Git
+├── plate_boundaries_typed/
+│   └── utig_noaa_plate_boundaries.geojson
 ├── earthquakes/
 │   └── terremotos_combined_1898_2025.csv
 ├── gravity/
 │   └── WGM2012_Bouguer_ponc_2min.grd
 ```
 
-These directories must be created manually if they do not already exist.
+The curated CRUST1.0, compressed ocean-age, and typed-boundary inputs are
+included in this repository. The pipeline automatically expands
+`age.3.2.nc.bz2` when the uncompressed grid is absent. Large earthquake and
+gravity inputs remain available through the auxiliary Zenodo archive.
 
 The pipeline expects this structure by default. If these datasets are not placed correctly, the pipeline will not execute properly.
 
@@ -244,7 +261,11 @@ The code is released under the **MIT License**.
 
 Original datasets remain subject to their respective licenses and are cited in the manuscript. Redistribution of restricted datasets may not be permitted.
 
-Some large raw datasets are not included in this repository due to GitHub file size limitations. These datasets are standard public geophysical resources and can be obtained from their original providers (e.g., IHFC, GEM, PB2002, WGM2012, GSRM, and global earthquake catalogs).
+Some large raw datasets are not included in this repository due to file-size
+or redistribution constraints. The curated contextual inputs required for the
+revised boundary-type, CRUST1.0, and ocean-age analyses are included in
+`data/raw/`; earthquake and gravity inputs remain in the auxiliary Zenodo
+archive.
 
 All processing steps remain fully reproducible using the provided code and data access instructions.
 
@@ -259,6 +280,10 @@ The datasets required for full reproducibility are available via Zenodo:
 
 * Large auxiliary datasets (earthquakes, gravity grids):
   https://doi.org/10.5281/zenodo.19784141
+
+* Curated contextual inputs (UTIG/NOAA typed boundaries, CRUST1.0 Moho, and
+  compressed ocean-age grid):
+  `data/raw/README_context_datasets.md`
 
 All datasets correspond to the versions used in the manuscript and ensure full independent reproducibility of the analysis.
 
